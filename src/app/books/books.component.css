@@ -1,0 +1,23 @@
+ ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cow {
+    list-style: none;
+    text-overflow: ellipsis;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+p {
+    color: navy;
+}
+h1 {
+    color: red;
+}
+h2{
+    color: blueviolet;
+    border: 1;
+    text-align: center;
+    size: 30px;
+}

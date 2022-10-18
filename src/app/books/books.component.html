@@ -1,0 +1,24 @@
+
+<h2>Programming Books List!</h2>
+<!--<button (click)="isShowing = !isShowing">
+<ng-container *ngIf="!isShowing">Show Books</ng-container>
+<ng-container *ngIf="isShowing">Hide Books</ng-container>
+</button>
+<button (click)="toggleBooks()">Toggle Books</button>-->
+<!--<button (click)="handleCick()" [disabled]="isDisabled">Show Books</button>
+<input type="text" [(ngModel)] = "myName"/>
+<div> {{ myName }} </div>
+
+<button (click)="isShowing = !isShowing">Toogle</button>-->
+
+<ul *ngIf="isShowing">
+    <ng-container *ngFor = "let singleBook of books; let i = index">
+ <!-- <app-book (bookemitter) = " addToCart($event)" [book]= "singleBook"></app-book>-->
+ <app-book [book]="singleBook"></app-book>
+</ng-container>
+<br>
+  <!--<li>
+    <img [src]="src2" [alt]="name2" width="100px" /> 
+    {{ name2 }} by {{ author2 }}
+  </li>-->
+</ul>
